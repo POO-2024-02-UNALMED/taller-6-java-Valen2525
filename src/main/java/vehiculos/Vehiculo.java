@@ -1,5 +1,7 @@
 package vehiculos;
 
+import java.util.ArrayList;
+
 public class Vehiculo {
     private String placa;
     private int puertas;
@@ -28,6 +30,13 @@ public class Vehiculo {
         return "Automoviles:: " + Automovil.cantidadAutomoviles() + "\n" +
                 "Camionetas: " + Camioneta.cantidadCamionetas() + "\n" +
                 "Camion: " + Camion.cantidadCamiones() + "\n";
+    }
+
+    public Pais paisMasvendedor(){
+        ArrayList <Pais> listado = new ArrayList <>();
+        for(Camioneta camioneta : listado){
+
+        }
     }
 
     public String getPlaca() {

@@ -8,7 +8,7 @@ public class Camioneta extends Vehiculo {
         super(placa, puertas, 90, nombre, precio, peso, "4X4", fabricante);
         this.volco = volco;
         listado.add(this); }
-        
+
     public Camioneta(String placa, int puertas, String nombre, long precio, int peso, Fabricante fabricante, boolean volco) {
         super(placa, puertas, 90, nombre, precio, peso, "4x4", fabricante); 
         this.volco = volco;
@@ -21,4 +21,5 @@ public class Camioneta extends Vehiculo {
     public static int cantidadCamionetas(){
         return listado.size();
     }
+    
 }
