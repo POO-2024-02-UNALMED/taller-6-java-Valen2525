@@ -16,7 +16,7 @@ public class Fabricante {
     public Pais getPais(){ return this.pais;}
     public void setPais(Pais pais){ this.pais = pais;}
 
-    public Fabricante fabricaMayorVentas(){
+    static public Fabricante fabricaMayorVentas(){
         ArrayList <Fabricante> fabricantes = new ArrayList <>();
         for(Camioneta camioneta : Camioneta.getListado()){
             fabricantes.add(camioneta.getFabricante());
