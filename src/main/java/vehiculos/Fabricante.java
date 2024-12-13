@@ -11,11 +11,11 @@ public class Fabricante {
         this.pais = pais;
     }
     public Fabricante(){this(null, null);}
-    public String getNombreFabricante(){ return this.nombreFabricante;}
-    public void setNombreFabricante(String nombre){ this.nombreFabricante = nombre;}
+    public String getNombre(){ return this.nombreFabricante;}
+    public void setNombre(String nombre){ this.nombreFabricante = nombre;}
     public Pais getPais(){ return this.pais;}
     public void setPais(Pais pais){ this.pais = pais;}
-    
+
     public Fabricante fabricaMayorVentas(){
         ArrayList <Fabricante> fabricantes = new ArrayList <>();
         for(Camioneta camioneta : Camioneta.getListado()){

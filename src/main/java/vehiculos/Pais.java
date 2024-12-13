@@ -10,8 +10,8 @@ public class Pais {
         return nombre;}
     public void setNombre(String nombre) {
         this.nombre = nombre;}
-        
-    public Pais paisMasvendedor(){
+
+    public Pais paisMasVendedor(){
         ArrayList <Pais> paises = new ArrayList <>();
         for(Camioneta camioneta : Camioneta.getListado()){
             paises.add(camioneta.getFabricante().getPais());
