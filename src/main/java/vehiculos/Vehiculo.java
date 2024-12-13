@@ -25,9 +25,9 @@ public class Vehiculo {
     public Vehiculo(){this(null, 0, 0, null, 0, 0, null, null);}
 
     public String vehiculosPorTipo(){
-        return "Automoviles:: " + str(Automoviles.cantidadAutomoviles()) + "\n" +
-                "Camionetas: " + str(Camionetas.cantidadCamionetas()) + "\n" +
-                "Camion: " + str(Camion.cantidadCamiones()) + "\n";
+        return "Automoviles:: " + Automovil.cantidadAutomoviles() + "\n" +
+                "Camionetas: " + Camioneta.cantidadCamionetas() + "\n" +
+                "Camion: " + Camion.cantidadCamiones() + "\n";
     }
 
     public String getPlaca() {
