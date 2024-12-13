@@ -9,6 +9,11 @@ public class Automovil extends Vehiculo{
         this.puestos = puestos;
         listado.add(this);
     }
+    public Automovil(String placa, int puertas, String nombre, long precio, int peso, Fabricante fabricante, int puestos) {
+        super(placa, 4, 100, nombre, precio, peso, "FWD", fabricante); 
+        this.puestos = puestos;
+        listado.add(this); }
+
     public Automovil(){super();}
 
     public int getPuestos(){
