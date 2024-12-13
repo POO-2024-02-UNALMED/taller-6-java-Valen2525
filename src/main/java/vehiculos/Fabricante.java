@@ -1,5 +1,7 @@
 package vehiculos;
 
+import java.util.ArrayList;
+
 public class Fabricante {
     private String nombreFabricante;
     private Pais pais;
@@ -13,4 +15,32 @@ public class Fabricante {
     public void setNombreFabricante(String nombre){ this.nombreFabricante = nombre;}
     public Pais getPais(){ return this.pais;}
     public void setPais(Pais pais){ this.pais = pais;}
+    
+    public Fabricante fabricaMayorVentas(){
+        ArrayList <Fabricante> fabricantes = new ArrayList <>();
+        for(Camioneta camioneta : Camioneta.getListado()){
+            fabricantes.add(camioneta.getFabricante());
+        }
+        for(Automovil automovil : Automovil.getListado()){
+            fabricantes.add(automovil.getFabricante());
+        }
+        for(Camion camion : Camion.getListado()){
+            fabricantes.add(camion.getFabricante());
+        }
+        Fabricante fabricaMayorVentas = null;
+        int repeticiones = 0;
+        for(Fabricante fabricante : fabricantes){
+            int contador = 0;
+            Fabricante elementoActual = fabricante;
+            for (int x=0; x < fabricantes.size(); x++){
+                if(fabricante == elementoActual){
+                    contador++;
+                }
+            }
+            if (contador > repeticiones){
+                fabricaMayorVentas = elementoActual;
+            }
+        }
+        return fabricaMayorVentas;
+    }
 }

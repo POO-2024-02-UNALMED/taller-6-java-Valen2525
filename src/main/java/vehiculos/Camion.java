@@ -20,4 +20,7 @@ public class Camion extends Vehiculo{
     public static int cantidadCamiones(){
         return listado.size();
     }
+    public static ArrayList <Camion> getListado(){
+        return listado;
+    }
 }

@@ -21,5 +21,8 @@ public class Camioneta extends Vehiculo {
     public static int cantidadCamionetas(){
         return listado.size();
     }
+    public static ArrayList <Camioneta> getListado(){
+        return listado;
+    }
     
 }

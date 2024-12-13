@@ -24,4 +24,7 @@ public class Automovil extends Vehiculo{
     public static int cantidadAutomoviles(){
         return listado.size();
     }
+    public static ArrayList <Automovil> getListado(){
+        return listado;
+    }
 }
