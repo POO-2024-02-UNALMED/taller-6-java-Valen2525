@@ -33,6 +33,7 @@ public class Pais {
             }
             if (contador > repeticiones){
                 paisMasvendedor = elementoActual;
+                repeticiones = contador;
             }
         }
         return paisMasvendedor;

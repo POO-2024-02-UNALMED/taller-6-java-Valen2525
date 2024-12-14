@@ -39,6 +39,7 @@ public class Fabricante {
             }
             if (contador > repeticiones){
                 fabricaMayorVentas = elementoActual;
+                repeticiones = contador;
             }
         }
         return fabricaMayorVentas;
