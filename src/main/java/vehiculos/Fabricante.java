@@ -32,8 +32,8 @@ public class Fabricante {
         for(Fabricante fabricante : fabricantes){
             int contador = 0;
             Fabricante elementoActual = fabricante;
-            for (int x=0; x < fabricantes.size(); x++){
-                if(fabricante == elementoActual){
+            for (Fabricante fabricanteComparar : fabricantes){
+                if(elementoActual.equals(fabricanteComparar)){
                     contador++;
                 }
             }

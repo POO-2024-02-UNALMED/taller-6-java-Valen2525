@@ -27,8 +27,8 @@ public class Pais {
         for(Pais pais : paises){
             Pais elementoActual = pais;
             int contador = 0;
-            for(int j = 0; j < paises.size(); j++) {
-                if (pais == elementoActual){
+            for(Pais paisComparar : paises) {
+                if (elementoActual.equals(paisComparar)){
                     contador ++;}
             }
             if (contador > repeticiones){
