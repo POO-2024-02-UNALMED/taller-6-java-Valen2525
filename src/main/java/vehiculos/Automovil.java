@@ -20,7 +20,8 @@ public class Automovil extends Vehiculo{
         return this.puestos;}
     public void setPuestos(int puestos){
         this.puestos = puestos;} 
-
+    public Fabricante getFabricante() {
+        return super.getFabricante();}
     public static int cantidadAutomoviles(){
         return listado.size();
     }

@@ -18,6 +18,12 @@ public class Camioneta extends Vehiculo {
 
     public boolean isVolco(){return this.volco;}
     public void setVolco(boolean vol){this.volco = vol;}
+    public String getTraccion() {
+        return super.getTraccion();}
+    public long getVelocidadMaxima() {
+        return super.getVelocidadMaxima();}
+    public Fabricante getFabricante() {
+        return super.getFabricante();}
     public static int cantidadCamionetas(){
         return listado.size();
     }

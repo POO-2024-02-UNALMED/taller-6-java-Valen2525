@@ -3,16 +3,16 @@ package vehiculos;
 import java.util.ArrayList;
 
 public class Fabricante {
-    private String nombreFabricante;
+    private String nombre;
     private Pais pais;
 
     public Fabricante(String nombre, Pais pais){
-        this.nombreFabricante = nombre;
+        this.nombre = nombre;
         this.pais = pais;
     }
     public Fabricante(){this(null, null);}
-    public String getNombre(){ return this.nombreFabricante;}
-    public void setNombre(String nombre){ this.nombreFabricante = nombre;}
+    public String getNombre(){ return this.nombre;}
+    public void setNombre(String nombre){ this.nombre = nombre;}
     public Pais getPais(){ return this.pais;}
     public void setPais(Pais pais){ this.pais = pais;}
 
